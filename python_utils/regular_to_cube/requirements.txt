@@ -1,0 +1,20 @@
+# Requirements for GRIB2 to FV3 cube sphere interpolation
+# Install with: pip install -r requirements.txt
+
+xarray>=0.20.0
+numpy>=1.20.0
+grib2io>=2.0.0
+scipy>=1.7.0
+
+# ESMF Python bindings
+# Note: ESMF may require system-level installation
+# On HPC systems, try: module load esmf
+# For conda: conda install -c conda-forge esmf esmpy
+# For pip: pip install esmpy (may require ESMF system libraries)
+esmpy>=8.0.0
+
+# Optional: for enhanced netCDF support
+netCDF4>=1.5.0
+
+# Optional: for parallel processing
+dask[array]>=2021.0.0

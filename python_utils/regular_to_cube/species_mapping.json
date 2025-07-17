@@ -1,0 +1,30 @@
+{
+  "comment": "Mapping from GRIB2 parameter names to FV3 variable names",
+  "description": "Adjust the keys based on your specific GRIB2 file parameter names",
+  "mappings": {
+    "SO4": "so4",
+    "BC1": "bc1", 
+    "BC2": "bc2",
+    "OC1": "oc1",
+    "OC2": "oc2", 
+    "DUST1": "dust1",
+    "DUST2": "dust2",
+    "DUST3": "dust3", 
+    "DUST4": "dust4",
+    "DUST5": "dust5",
+    "SEAS1": "seas1",
+    "SEAS2": "seas2", 
+    "SEAS3": "seas3",
+    "SEAS4": "seas4"
+  },
+  "grib2_info": {
+    "note": "You may need to modify the GRIB2 parameter identification in the script",
+    "common_aerosol_parameters": {
+      "Sulfate": "Usually parameterNumber 1, parameterCategory 20",
+      "Black_Carbon": "Usually parameterNumber 2-3, parameterCategory 20", 
+      "Organic_Carbon": "Usually parameterNumber 4-5, parameterCategory 20",
+      "Dust": "Usually parameterNumber 6-10, parameterCategory 20",
+      "Sea_Salt": "Usually parameterNumber 11-14, parameterCategory 20"
+    }
+  }
+}
